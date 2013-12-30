@@ -1,0 +1,9 @@
+runtime "ruby"
+exec "goals.rb"
+
+remote
+
+gem "google_drive"
+gem "faraday"
+
+file "email.erb"

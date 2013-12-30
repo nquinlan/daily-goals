@@ -1,0 +1,8 @@
+{
+  "google_username" : "you@example.com",
+  "google_password" : "yourpassword",
+  "spreadsheet_key" : "0ApzVaO_Kk8b2dF9hb0hua2JQUF80N3VuM3RRNGJKcWc",
+  "sendgrid_username" : "youraccount",
+  "sendgrid_password" : "yourpassword",
+  "email" : "you+goals@example.com"
+}
