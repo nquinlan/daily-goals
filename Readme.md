@@ -3,7 +3,7 @@ _Goals emailed daily._
 
 This is a quick hack to email your goals to you every day. It uses [Google Drive](http://drive.google.com/), [Iron.io](http://iron.io), and [SendGrid](http://sendgrid.com).
 
-It will send you a selection of goals from a Google Spreadsheet broken up into categories ([like so](https://docs.google.com/a/sendgrid.com/spreadsheet/ccc?key=0ApzVaO_Kk8b2dF9hb0hua2JQUF80N3VuM3RRNGJKcWc)), by randomly picking a goal from each category.
+It will send you a selection of goals from a Google Spreadsheet broken up into categories ([like so](https://docs.google.com/a/sendgrid.com/spreadsheet/ccc?key=0ArkKC73GgfRNdHd0X3U2b1J3SDFlMmtQWDZ2WEVqT3c)), by randomly picking a goal from each category.
 
 ## Getting Started
 
