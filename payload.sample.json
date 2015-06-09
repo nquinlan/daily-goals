@@ -1,6 +1,7 @@
 {
-  "google_username" : "you@example.com",
-  "google_password" : "yourpassword",
+  "google_client_id" : "You can get one of these in the Google Developer Console:",
+  "google_client_secret" : "https://console.developers.google.com/",
+  "google_refresh_token" : "To generate a refresh token, you'll need to go through the OAuth Flow. You can do that in the Google OAuth Playground, https://developers.google.com/oauthplayground/#step1&apisSelect=https%3A//www.googleapis.com/auth/drive&url=https%3A//&content_type=application/json&http_method=GET&useDefaultOauthCred=checked&oauthEndpointSelect=Google&oauthAuthEndpointValue=https%3A//accounts.google.com/o/oauth2/auth&oauthTokenEndpointValue=https%3A//www.googleapis.com/oauth2/v3/token&includeCredentials=unchecked&accessTokenType=bearer&autoRefreshToken=unchecked&accessType=offline&forceAprovalPrompt=checked&response_type=code",
   "spreadsheet_key" : "0ApzVaO_Kk8b2dF9hb0hua2JQUF80N3VuM3RRNGJKcWc",
   "sendgrid_username" : "youraccount",
   "sendgrid_password" : "yourpassword",

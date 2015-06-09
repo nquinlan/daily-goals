@@ -1,13 +1,27 @@
 require "google_drive"
 require "erb"
+require "json"
 require "faraday"
 
+# Get a Google Access Token from an OAuth Refresh token
+response = Faraday.post do |req|
+  req.url "https://www.googleapis.com/oauth2/v3/token"
+  req.body = {
+    "refresh_token" => params['google_refresh_token'],
+    "client_id" => params['google_client_id'],
+    "client_secret" => params['google_client_secret'],
+    "grant_type" => "refresh_token"
+  }
+end
+
+token_info = JSON.parse(response.body)
+access_token = token_info["access_token"]
+
 # login to Google Drive
-# this can (and probably should) be done using oAuth (which is safer)
-session = GoogleDrive.login(params['google_username'], params['google_password'])
+session = GoogleDrive.login_with_oauth(access_token)
 # let's go ahead and grab the spreadsheet that has all of my goals
 spread = session.spreadsheet_by_key(params['spreadsheet_key'])
-# now we're gonna assume the first worksheet is the one we car about
+# now we're gonna assume the first worksheet is the one we care about
 sheet = spread.worksheets.first
 
 # get the number of rows in each column (so that we may choose a random one)
